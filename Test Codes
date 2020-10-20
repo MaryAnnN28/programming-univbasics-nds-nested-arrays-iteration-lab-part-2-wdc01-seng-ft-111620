@@ -1,0 +1,18 @@
+
+def find_min_in_nested_arrays(array_1)
+  results_array_1 = []
+  row_index = 0
+  while row_index < array_1.length do
+    element_index = 0
+
+    while element_index < array_1[row_index].length do
+   if  array_1.map { |a| a.int_min } < array_1[row_index][element_index]
+      results_array_1 << array_1[row_index][element_index]
+    end
+    element_index += 1
+  end
+  results_array_1 << new_min
+  row_index += 1
+end
+results_array_1
+end
